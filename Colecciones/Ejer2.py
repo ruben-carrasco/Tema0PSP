@@ -8,6 +8,9 @@ lista.sort()
 max = lista[-1]
 min = lista[0]
 
+#min(lista)
+#max(lista)
+
 print("Max: " + str(max))
 print("Min: " + str(min))
 
