@@ -1,30 +1,30 @@
 class Libro:
-    def __init__(self, titulo, autor, numEjem, numPrestados):
+    def __init__(self, titulo, autor, num_ejem, num_prestados):
         self.titulo = titulo
         self.autor = autor
-        self.numEjem = numEjem
-        self.numPrestados = numPrestados
+        self.num_ejem = num_ejem
+        self.num_prestados = num_prestados
 
     def prestamo(self):
-        if self.numEjem > 0:
-            self.numEjem -= 1
-            self.numPrestados += 1
+        if self.num_ejem > 0:
+            self.num_ejem -= 1
+            self.num_prestados += 1
             res = True
         else:
             res = False
         return res
 
     def devolucion(self):
-        if self.numPrestados > 0:
-            self.numPrestados -= 1
-            self.numEjem += 1
+        if self.num_prestados > 0:
+            self.num_prestados -= 1
+            self.num_ejem += 1
             res = True
         else:
             res = False
         return res
 
     def __str__(self):
-        return f"Titulo: {self.titulo}\nAutor: {self.autor}\nEjemplares: {self.numEjem}\nPrestados: {self.numPrestados}"
+        return f"Titulo: {self.titulo}\nAutor: {self.autor}\nEjemplares: {self.num_ejem}\nPrestados: {self.num_prestados}"
         
     def __eq__(self, objeto):
         return self.titulo == objeto.titulo and self.autor == self.autor

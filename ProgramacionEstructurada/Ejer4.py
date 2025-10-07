@@ -2,7 +2,7 @@
 import random
 
 # Variable con el número random
-numRand = random.randint(1, 100)
+num_rand = random.randint(1, 100)
 # Variable booleano que almacena si gana o pierde
 ganador = False
 
@@ -11,9 +11,9 @@ num = int(input("Adivina el número: "))
 
 # Bucle que termina si se introduce -1 o gana
 while(num != -1 and not ganador): 
-    if num > numRand:
+    if num > num_rand:
         print ("menor")
-    elif num < numRand: 
+    elif num < num_rand: 
         print("mayor")
     else:
         ganador = True

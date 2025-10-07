@@ -1,7 +1,7 @@
 def main():
     ventas = {}
     nombre = ""
-    cantidadVendida = 0
+    cantidad_vendida = 0
 
     while(True):
         print("1. Agregar ventas")
@@ -13,16 +13,16 @@ def main():
         match opcion:
             case 1:
                 nombre = str(input("Introduce el nombre del artículo: "))
-                cantidadVendida = int(input("Introduce el número de artículos vendidos: "))
-                agregarVenta(nombre, cantidadVendida, ventas)
+                cantidad_vendida = int(input("Introduce el número de artículos vendidos: "))
+                agregarVenta(nombre, cantidad_vendida, ventas)
             case 2:
                 nombre = str(input("Introduce el nombre del contacto: "))
                 print(str(calcularTotalVentas(nombre, ventas)) + " ventas")
             case 0:
                 print(ventas)
             
-def agregarVenta(nombre, cantidadVendida, ventas):
-    ventas[nombre] = cantidadVendida
+def agregarVenta(nombre, cantidad_vendida, ventas):
+    ventas[nombre] = cantidad_vendida
 
 def calcularTotalVentas(nombre, ventas):
     return ventas.get(nombre,0)
