@@ -24,7 +24,7 @@ class Libro:
         return res
 
     def __str__(self):
-        return f"Titulo: {self.titulo}\nAutor: {self.autor}\nEjemplares: {self.num_ejem}\nPrestados: {self.num_prestados}"
+        return f"Titulo: {self.titulo}\nAutor: {self.autor}\nEjemplares: {self.numEjem}\nPrestados: {self.numPrestados}"
         
     def __eq__(self, objeto):
         return self.titulo == objeto.titulo and self.autor == self.autor

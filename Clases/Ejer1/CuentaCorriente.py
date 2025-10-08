@@ -4,11 +4,6 @@ class CuentaCorriente:
         self.saldo = saldo
         self.nombre = nombre
     
-    def __init__(self, dni, nombre, saldo):
-        self.dni = dni
-        self.nombre = nombre
-        self.saldo = saldo
-    
     def sacarDinero(self, cantidad):
         if (self.saldo > cantidad):
             self.saldo -= cantidad
